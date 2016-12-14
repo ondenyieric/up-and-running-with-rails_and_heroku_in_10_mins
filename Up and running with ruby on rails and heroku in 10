@@ -1,0 +1,86 @@
+Up and running with ruby on rails and heroku in 10 minutes
+
+
+#rails command
+rails new rails_and_heroku_in_10_mins -d postgresql
+
+cd rails_and_heroku_in_10_mins
+
+
+set up your gemfile
+
+#add
+gem 'bootstrap-generators'
+gem 'record_tag_helper', '~> 1.0'
+
+
+#create new group
+
+group :production do
+ gem 'pg', '~> 0.18'
+ # Use Puma as the app server
+ gem 'puma', '~> 3.0'
+ends
+
+
+set ruby version
+$echo "2.3.1" > .ruby-version
+
+
+rails g bootstrap:install
+
+bundle install
+
+
+scaffold someting simple using bootstrap templates
+rails g scaffold Items name:string quantity:integer description:string amount:decimal 
+
+
+set root/landing page
+Create a Heroku account and install toolbelt
+
+continue on your terminal
+
+git init
+git add ./
+git commit -m 'ready for deploy'
+
+
+heroku login
+#provide credentials
+
+
+heroku create
+
+
+
+
+$ heroku login
+
+Create a new Git repository
+
+Initialize a git repository in a new or existing directory
+
+$ cd my-project/
+$ git init
+$ heroku git:remote -a murmuring-harbor-32697
+
+Deploy your application
+
+Commit your code to the repository and deploy it to Heroku using Git.
+
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+
+Existing Git repository
+
+For existing repositories, simply add the heroku remote
+
+$ heroku git:remote -a murmuring-harbor-32697
+
+
+
+
+
+

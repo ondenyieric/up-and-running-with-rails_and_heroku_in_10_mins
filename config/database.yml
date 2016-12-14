@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: rails_and_heroku_in_10_mins_development
+  database: rails_and_heroku_in_10_mins
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: rails_and_heroku_in_10_mins_test
+  database: rails_and_heroku_in_10_mins
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: rails_and_heroku_in_10_mins_production
+  database: rails_and_heroku_in_10_mins
   username: rails_and_heroku_in_10_mins
   password: <%= ENV['RAILS_AND_HEROKU_IN_10_MINS_DATABASE_PASSWORD'] %>
