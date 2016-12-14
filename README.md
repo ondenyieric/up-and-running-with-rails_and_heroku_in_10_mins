@@ -2,7 +2,7 @@
 
 
 ##run this rails command with postgresql database option
-$rails new rails_and_heroku_in_10_mins -d postgresql
+####$rails new rails_and_heroku_in_10_mins -d postgresql
 
 ##cd to app directory
 #####cd rails_and_heroku_in_10_mins
@@ -15,12 +15,13 @@ $rails new rails_and_heroku_in_10_mins -d postgresql
 #####gem 'bootstrap-generators'
 #####gem 'record_tag_helper', '~> 1.0'
 
-###create new group
+###create new group in yor gemfile with the below production gems
 
-#####group :production do
- ##### gem 'pg', '~> 0.18'
- # Use Puma as the app server
-##### gem 'puma', '~> 3.0'
+####group :production do
+
+####gem 'pg', '~> 0.18'
+ ###Use Puma as the app server
+####gem 'puma', '~> 3.0'
 #####ends
 
 
