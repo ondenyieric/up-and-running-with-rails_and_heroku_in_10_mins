@@ -18,7 +18,7 @@ $rails new rails_and_heroku_in_10_mins -d postgresql
 ###create new group
 
 #####group :production do
- #####gem 'pg', '~> 0.18'
+ ##### gem 'pg', '~> 0.18'
  # Use Puma as the app server
 ##### gem 'puma', '~> 3.0'
 #####ends
